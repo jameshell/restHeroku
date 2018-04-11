@@ -30,10 +30,32 @@ public class Student implements Serializable {
 
     @Column(name = "student_name", nullable = false)
     private String name;
+    
+    @Column(name = "student_lastname", nullable = false)
+    private String lastName;
 
     @Column(name = "student_age", nullable = false)
     private int age;
+    
+    @Column(name = "student_email", nullable = false)
+    private String email;
 
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
     public int getId() {
         return id;
     }
