@@ -19,7 +19,7 @@ import javax.persistence.Table;
  * @author james
  */
 @Entity
-@Table(name = "student")
+@Table(name = "test")
 public class Test implements Serializable{
     @Id
     @Column(name = "test_id", unique = true)
