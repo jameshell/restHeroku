@@ -1,6 +1,6 @@
 # Taller 3 - Interoperabilidad/Interoperability
-* Proyecto realizado en la electiva profesional de la Universidad Sergio Arboleda, Ingeniería de Requerimientos por Fabián Giraldo Giraldo.
-* Project developed in the professional elective "Requirements Engineering" by Fabián Giraldo Giraldo.
+* Proyecto realizado en la electiva profesional de la Universidad Sergio Arboleda, Ingeniería de Requerimientos.
+* Project developed in the professional elective "Requirements Engineering".
 ## Descripción - Description
 * Se implementan servicios REST a una página web cuyo backend está montado en Java(versión 1.8). Se usan DAO's genéricos y JPA para la persistencia de los datos
 sobre una base de datos PostgreSQL. Los servicios y la página web están montados en Heroku sobre un Glassfish versión 3.3 embebido. Servicios implementados en Jersey. 
