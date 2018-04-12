@@ -7,10 +7,11 @@ package com.mycompany.jpa;
  */
 
 import java.io.Serializable;
-
+import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /*
@@ -39,6 +40,9 @@ public class Student implements Serializable {
     
     @Column(name = "student_email", nullable = false)
     private String email;
+    
+    @OneToMany(mappedBy="student")
+    private List<Exam> exams;
 
     public String getLastName() {
         return lastName;
@@ -80,8 +84,18 @@ public class Student implements Serializable {
         this.age = age;
     }
 
+    public List<Exam> getExams() {
+        return exams;
+    }
+
+    public void setExams(List<Exam> exams) {
+        this.exams = exams;
+    }
+
     @Override
     public String toString() {
-        return id + "\t" + name + "\t" + age;
+        return "Student{" + "id=" + id + ", name=" + name + ", lastName=" + lastName + ", age=" + age + ", email=" + email + ", exams=" + exams + '}';
     }
+
+    
 }
